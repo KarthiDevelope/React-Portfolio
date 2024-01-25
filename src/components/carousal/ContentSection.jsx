@@ -56,11 +56,9 @@ const ContentSection = () => {
           repeat={Infinity}
         />
       </div>
-
       <div className='Bottom_content text-slate-600 text-sm subpixel-antialiased font-light capitalize font-mono hover:shadow-cyan-500/50'>
-        As a React.js developer proficient in UI frameworks, I specialize in crafting robust web applications that seamlessly blend user-friendly interfaces with cutting-edge functionality. Leveraging my expertise in JavaScript and React.js, I bring a passion for creating dynamic and engaging digital experiences to every project. My portfolio showcases a diverse range of applications, highlighting my commitment to delivering innovative solutions that meet both client and user needs.
+        As a React Js developer proficient in UI frameworks, I specialize in crafting robust web applications that seamlessly blend user-friendly interfaces with cutting-edge functionality. Leveraging my expertise in JavaScript and React.js, I bring a passion for creating dynamic and engaging digital experiences to every project. My portfolio showcases a diverse range of applications, highlighting my commitment to delivering innovative solutions that meet both client and user needs.
       </div>
-      
       <div className='flex align-middle justify-start mt-10 gap-4'>
         {socialMedia?.map((item, i) => {
           return (
@@ -70,7 +68,6 @@ const ContentSection = () => {
                 alt={item?.label}
                 className={`h-[40px] w-[40px] hover:animate-bounce duration-150 ease-in-out opacity-${hoveredItem === item?.key ? '100' : '20'}`}
                 onMouseEnter={() => handleFunction(item?.key)}
-                
               />
             </div>
           );

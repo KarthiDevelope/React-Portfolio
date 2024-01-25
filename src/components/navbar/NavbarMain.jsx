@@ -9,10 +9,11 @@ import {
     Bars2Icon,
 } from "@heroicons/react/24/solid";
 import NavList from "./NavList";
-import Profile from "./Profile";
+import styled from "styled-components";
+import ThemeDark from "../theme";
 
 
-export function NavbarMain() {
+export function NavbarMain({background}) {
     const [isNavOpen, setIsNavOpen] = React.useState(false);
 
     const toggleIsNavOpen = () => setIsNavOpen((cur) => !cur);
@@ -25,7 +26,9 @@ export function NavbarMain() {
     }, []);
 
     return (
-        <Navbar className="mx-auto w-80 items-center justify-center p-2 lg:rounded-full lg:pl-6 shadow-xl hover:shadow-cyan-500/50" >
+        <ImageAlign background={background}>
+            <ThemeDark />
+        <Navbar className="mx-auto w-80 items-center justify-center p-2 lg:rounded-full lg:pl-6 shadow-xl hover:shadow-cyan-500/50"  >
             <div className="relative mx-auto flex items-center justify-between text-blue-gray-900 ">
                 <div className="flex align-middle justify-center pl-2 lg:block  ">
                     <NavList />
@@ -44,5 +47,16 @@ export function NavbarMain() {
                 <NavList />
             </MobileNav>
         </Navbar>
+        </ImageAlign>
     );
 }
+
+const ImageAlign = styled.div`
+    /* background-image: url(${props => props.background}); */
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 8.9in;
+    
+
+`
+

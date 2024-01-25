@@ -1,20 +1,27 @@
 // CarousalSectionMain.jsx
 import React from 'react';
 import ContentSection from './ContentSection';
-import Image from './Image';
+import "../../App.css"
 import styled from 'styled-components';
+import bg from "../../assets/pictures/background.png"
+import Laptop from '../3dmodals/Laptop';
+import ScrollIndicator from '../ScrollMouse';
 
-const CarousalSectionMain = () => {
+
+const CarousalSectionMain = ({ background }) => {
   return (
-    <BannerStyle>
+    <BannerStyle background={background}>
       <div className='Main_Section'>
         <div className='Left_Section'>
           <ContentSection />
         </div>
-        <div className='Right_Section'>
-          <Image />
+        <div
+          className='Right_Section'>
+          <Laptop />
         </div>
+
       </div>
+      <ScrollIndicator />
     </BannerStyle>
   );
 }
@@ -37,6 +44,16 @@ const BannerStyle = styled.div`
 
  .Right_Section {
   width: 50%;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url(${props => props.background}); */
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+
  }
 
 `;
+
