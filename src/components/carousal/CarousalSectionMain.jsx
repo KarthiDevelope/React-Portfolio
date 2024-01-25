@@ -3,7 +3,6 @@ import React from 'react';
 import ContentSection from './ContentSection';
 import "../../App.css"
 import styled from 'styled-components';
-import bg from "../../assets/pictures/background.png"
 import Laptop from '../3dmodals/Laptop';
 import ScrollIndicator from '../ScrollMouse';
 

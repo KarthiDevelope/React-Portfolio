@@ -2,7 +2,6 @@ import React from 'react';
 import { NavbarMain } from './navbar/NavbarMain';
 import CarousalSectionMain from './carousal/CarousalSectionMain';
 import bg from "../assets/pictures/background.png";
-import ThemeDark from './theme';
 import About from './about/About';
 
 

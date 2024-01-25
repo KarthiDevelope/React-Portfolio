@@ -2,7 +2,6 @@ import React from "react";
 import {
     Navbar,
     MobileNav,
-    Typography,
     IconButton,
 } from "@material-tailwind/react";
 import {
