@@ -1,8 +1,5 @@
 import { Button, Switch } from '@material-tailwind/react';
 import React, { useEffect, useState } from 'react';
-import light from "../assets/pictures/light.png";
-import dark from "../assets/pictures/dark.png";
-
 
 const ThemeDark = () => {
 

@@ -9,7 +9,7 @@ import {
 } from "@heroicons/react/24/solid";
 import NavList from "./NavList";
 import styled from "styled-components";
-import ThemeDark from "../theme";
+import ThemeDark from "../Theme";
 
 
 export function NavbarMain({background}) {
